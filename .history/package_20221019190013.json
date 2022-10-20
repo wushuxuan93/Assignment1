@@ -1,0 +1,11 @@
+{
+  "name": "Assignment1_Shuxuan_Wu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Shuxuan Wu",
+  "license": "MIT",
+  "dependencies": {
+    "mime-types": "^4.0.0"
+  }
+}
+
