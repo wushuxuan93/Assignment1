@@ -1,10 +1,15 @@
+h1
+{
+   font-size : 60px;
+}
 h7
 {
     font-family:small-caps;
 }
-.contactinfo{
-    font-variant: small-caps;
-    text-transform: capitalize;
+h7
+{
+    font-family:small-caps;
+    color:white;
 }
 
 h1 {

@@ -15,7 +15,7 @@ h1 {
     text-align: center;
 }
 
-#body{
+body{
   background-image: url('./Assets/images/background.jpg');
 }
 #copyright {

@@ -1,0 +1,50 @@
+h1
+{
+   font-size : 60px;
+}
+h7
+{
+    font-family:small-caps;
+}
+h7
+{
+    font-family:small-caps;
+    color:white;
+}
+
+h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+#body{
+  background-image: url('./Assets/images/background.jpg');
+}
+#copyright {
+    font-size: x-small;
+    color: white;
+}
+
+#submit {
+    color: cornflowerblue;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px 5px;
+    border: 1px solid #666666;
+    font-variant: small-caps;
+    margin-left: 270px;
+}
+
+    #submit:hover {
+        border-width: medium;
+        border-color: #666666;
+        border-style: double none double none;
+        padding: inherit;
+    }

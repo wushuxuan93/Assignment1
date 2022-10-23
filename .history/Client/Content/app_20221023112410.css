@@ -1,0 +1,93 @@
+h1
+{
+   font-size : 60px;
+}
+h7
+{
+    font-family:small-caps;
+}
+h7
+{
+    font-family:small-caps;
+    color:white;
+}
+
+h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+#container{
+  background-image: url('./Assets/images/background.jpg');
+}
+#copyright {
+    font-size: x-small;
+    color: white;
+}
+
+
+
+
+label {
+    padding: 3px;
+    width: 200px;
+    float: left;
+    text-align: right;
+    vertical-align: middle;
+    clip: rect(auto, auto, auto, auto);
+    color:white;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    border-top-color: rgb(102, 102, 102);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(102, 102, 102);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(102, 102, 102);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(102, 102, 102);
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+#submit {
+    color: cornflowerblue;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px 5px;
+    border: 1px solid #666666;
+    font-variant: small-caps;
+    margin-left: 270px;
+}
+
+    #submit:hover {
+        border-width: medium;
+        border-color: #666666;
+        border-style: double none double none;
+        padding: inherit;
+    }
+#submission {
+    text-align: center;
+    display: block
+    ;}
+    .card{
+       text-align: center;
+    display: block
+    }
+    .card-img-top{
+      text-align: center;
+    display: block
+    }
