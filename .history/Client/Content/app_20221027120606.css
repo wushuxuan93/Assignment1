@@ -1,8 +1,7 @@
-h6,h5,h3
+h6,h5
 {
     font-variant: small-caps;
     text-transform: capitalize;
-    font-size:medium;
 }
 .contactinfo{
     font-variant: small-caps;   

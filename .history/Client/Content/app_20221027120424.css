@@ -1,0 +1,27 @@
+h6
+{
+    font-family:small-caps;
+}
+.contactinfo{
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+
+#body{
+  background-image: url('./Assets/images/background.jpg');
+}
+#copyright {
+    font-size: x-small;
+    color: white;
+}
+
+
+
