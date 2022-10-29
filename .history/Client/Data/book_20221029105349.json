@@ -1,0 +1,21 @@
+{
+    "contacts":
+    [
+        {
+           "Contact Name" :"Amily Hamson",
+           "Contact Number":"4643238940",
+           "Email Address":"AmilyHamson22@gmail.com"
+        },
+                {
+           "Contact Name" :"Kim Wang",
+           "Contact Number":"2651452235",
+           "Email Address":"KimWang@gmail.com"
+        },
+                {
+           "Contact Name" :"Lee Brinkmann",
+           "Contact Number":"4685216951",
+           "Email Address":"LeeBrinkmann1986@mycentennial.com"
+        }
+    ]
+    
+}
