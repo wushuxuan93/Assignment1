@@ -1,0 +1,21 @@
+{
+    "contacts":
+    [
+        {
+           "Contact_Name" :"Amily Hamson",
+           "Contact_Number":"4643238940",
+           "Contact_Email":"AmilyHamson22@gmail.com"
+        },
+                {
+           "Contact_Name" :"Kim Wang",
+           "Contact_Number":"2651452235",
+           "Contact_Email":"KimWang@gmail.com"
+        },
+                {
+           "Contact_Name" :"Lee Brinkmann",
+           "Contact_Number":"4685216951",
+           "Contact_Email":"LeeBrinkmann1986@mycentennial.com"
+        }
+    ]
+    
+}

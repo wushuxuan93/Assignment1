@@ -7,8 +7,6 @@ import logger from 'morgan';
 //step 1- import db package
 import mongoose from 'mongoose';
 
-import indexRouter from '../Routes/index'; //top level routes
-import contactsListRouter from '../Routes/contacts-list';
 
 //step 2 - DB configuration
 import * as DBConfig from './db'
@@ -24,6 +22,9 @@ db.on("error", function () {
   console.error(`Connection Error`);
 });
 
+import indexRouter from '../Routes/index'; //top level routes
+import contactsListRouter from '../Routes/contacts-list';
+
 const app = express();
 
 // view engine setup
@@ -37,7 +38,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../../Client')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 
-//use routes
 app.use('/', indexRouter);
 app.use('/', contactsListRouter);
 

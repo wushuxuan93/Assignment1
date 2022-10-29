@@ -25,4 +25,15 @@ export function DisplayContactPage(req: Request, res: Response, next: NextFuncti
     res.render('index', { title: 'Contact Us', page: 'contact'  });
 }
 
-
+export function DisplayContactsList(req: Request, res: Response, next: NextFunction): void
+{
+    Contacts.find(function (err, contactsCollection)
+    {
+        if (err)
+        { 
+            console.error(err);
+            res.end(err);
+        }
+        res.render('index', { title: 'Contacts List', page: 'contacts-list', contacts: contactsCollection });
+    })
+}
