@@ -51,7 +51,7 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
             ({
                 "_id": id,
                 "Contact_Name": req.body.name,
-                "Contact_Number": req.body.number,
+                "Contact_number": req.body.number,
                 "Contact_Email": req.body.email,
             });
   

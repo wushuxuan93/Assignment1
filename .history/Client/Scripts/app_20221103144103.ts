@@ -1,6 +1,7 @@
 //IIFE
 (function()
 {
+
     function Start()
     {
         console.log("App Started!");
@@ -10,10 +11,11 @@
             if(!confirm("Are you sure?"))
             {
                 event.preventDefault();
-                location.href = "/contacts-list";
+                location.href = "/movie-list";
             }
        });
     }
+
     window.addEventListener("load", Start);
 
 })();

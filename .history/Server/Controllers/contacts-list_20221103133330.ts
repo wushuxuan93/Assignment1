@@ -1,12 +1,12 @@
 import express from 'express';
-import { CallbackError } from 'mongoose';
-//import Contacts from '../Models/contacts';
-import { UserDisplayName } from '../Util';
+
 import Contacts from '../Models/contacts';
+import { UserDisplayName } from '../Util';
+
 // Display Functions
 
 //(R)ead in CRUD
-export function DisplayContactsListPage(req: express.Request, res: express.Response, next: express.NextFunction): void {
+export function DisplayContactsListPage(req: express.Request, res: express.Response, next: express.NextFunction) {
     Contacts.find(function (err, contactsCollection) {
         if (err) {
             console.error(err);
@@ -15,8 +15,8 @@ export function DisplayContactsListPage(req: express.Request, res: express.Respo
         res.render('index', { title: 'Contacts List', page: 'contacts-list', contacts: contactsCollection, displayName: UserDisplayName(req) });
     });
 }
-// Display (E)dit page
-export function DisplayEditPage(req: express.Request, res: express.Response, next: express.NextFunction): void {
+    // Display (E)dit page
+    export function DisplayEditPage(req: express.Request, res: express.Response, next: express.NextFunction): void {
         let id = req.params.id;
 
         // pass the id to the db
@@ -50,18 +50,18 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
         let updatedContactsItem = new Contacts
             ({
                 "_id": id,
-                "Contact_Name": req.body.name,
-                "Contact_Number": req.body.number,
-                "Contact_Email": req.body.email,
+                "name": req.body.name,
+                "number": req.body.number,
+                "email": req.body.email,
             });
   
         // find the contacts item via db.contacts.update({"_id":id}) and then update
-        Contacts.updateOne({ _id: id }, updatedContactsItem, function(err: CallbackError) {
+        Contacts.updateOne({ _id: id }, updatedContactsItem, {}, (err) => {
             if (err) {
                 console.error(err);
                 res.end(err);
             }
-            // edit was successful -> go to the movie-list page
+  
             res.redirect('/contacts-list');
         });
     }
@@ -71,13 +71,13 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
         // instantiate a new Contacts
         let newContact = new Contacts
             ({
-                "Contact_Name": req.body.name,
-                "Contact_Number": req.body.number,
-                "Contact_Email": req.body.email,
+                "name": req.body.name,
+                "number": req.body.number,
+                "email": req.body.email,
             });
 
         // db.clothing.insert({clothing data is here...})
-        Contacts.create(newContact, function(err: CallbackError) {
+        Contacts.create(newContact, (err) => {
             if (err) {
                 console.error(err);
                 res.end(err);
@@ -92,7 +92,7 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
         let id = req.params.id;
 
         // db.clothing.remove({"_id: id"})
-        Contacts.remove({ _id: id }, function(err: CallbackError) {
+        Contacts.remove({ _id: id }, (err) => {
             if (err) {
                 console.error(err);
                 res.end(err);

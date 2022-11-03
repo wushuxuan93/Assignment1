@@ -50,9 +50,9 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
         let updatedContactsItem = new Contacts
             ({
                 "_id": id,
-                "Contact_Name": req.body.name,
-                "Contact_Number": req.body.number,
-                "Contact_Email": req.body.email,
+                "Name": req.body.name,
+                "number": req.body.number,
+                "Email": req.body.email,
             });
   
         // find the contacts item via db.contacts.update({"_id":id}) and then update
@@ -71,9 +71,9 @@ export function DisplayEditPage(req: express.Request, res: express.Response, nex
         // instantiate a new Contacts
         let newContact = new Contacts
             ({
-                "Contact_Name": req.body.name,
-                "Contact_Number": req.body.number,
-                "Contact_Email": req.body.email,
+                "Name": req.body.name,
+                "Number": req.body.number,
+                "Email": req.body.email,
             });
 
         // db.clothing.insert({clothing data is here...})
