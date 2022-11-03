@@ -1,0 +1,9 @@
+{
+  "name": "Assignment2",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/wushuxuan93/Assignment2.git",
+  "author": "Shuxuan Wu",
+  "license": "MIT",
+  "private": true
+}

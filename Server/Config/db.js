@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Secret = exports.HostName = exports.LocalURI = void 0;
+exports.HostName = exports.Secret = exports.RemoteURI = exports.LocalURI = void 0;
 exports.LocalURI = "mongodb://127.0.0.1/contacts";
-exports.HostName = "localhost";
+exports.RemoteURI = "mongodb+srv://ShuxuanWu:5mHPx2WNhcQL5h8h@cluster0.motycs5.mongodb.net/?retryWrites=true&w=majority";
 exports.Secret = "someSecret";
+exports.HostName = "MongoDB Atlas";
 //# sourceMappingURL=db.js.map
